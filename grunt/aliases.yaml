@@ -1,0 +1,28 @@
+default: 
+  description: 'Default task'
+  tasks:
+    - 'file-w3c-validation'
+
+file-w3c-validation:
+  description: 'W3C html validation grunt plugin.'
+  tasks:
+    - 'clean:w3c_reports'
+    - 'validation:file'
+
+ci-file-w3c-validation:
+  description: 'W3C html validation grunt plugin for jenkins.'
+  tasks:
+    - 'clean:w3c_reports'
+    - 'validation:ci_file'
+
+url-w3c-validation:
+  description: 'W3C html validation grunt plugin.'
+  tasks:
+    - 'clean:w3c_reports'
+    - 'validation:url'
+
+ci-url-w3c-validation:
+  description: 'W3C html validation grunt plugin for jenkins.'
+  tasks:
+    - 'clean:w3c_reports'
+    - 'validation:ci_url'

@@ -1,0 +1,10 @@
+# tools
+.idea
+
+# node modules
+node_modules
+
+# W3C Reports
+log/w3cErrors
+log/validation-status.json
+_tempvlidation.html
